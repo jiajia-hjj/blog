@@ -1,0 +1,559 @@
+<!DOCTYPE html>
+<html lang="en-US">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>Meta基础知识： | HHH的学习碎碎念</title>
+    <meta name="generator" content="VuePress 1.9.7">
+    <link rel="icon" href="/blog/favicon.ico">
+    <link rel="manifest" href="/blog/manifest.json">
+    <link rel="apple-touch-icon" href="/blog/icons/apple-touch-icon.png">
+    <link rel="mask-icon" href="/blog/icons/safari-pinned-tab.svg" color="#3eaf7c">
+    <meta name="description" content="一个小小前端的学习笔记!">
+    <meta name="author" content="HJJ">
+    <meta name="keywords" content="一个小小前端的学习笔记!">
+    <meta name="viewport" content="width=device-width,initial-scale=1,user-scalable=no">
+    <meta name="theme-color" content="#3eaf7c">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <meta name="msapplication-TileImage" content="/icons/msapplication-icon-144x144.png?v1">
+    <meta name="msapplication-TileColor" content="#000000">
+    
+    <link rel="preload" href="/blog/assets/css/0.styles.37c3a971.css" as="style"><link rel="preload" href="/blog/assets/js/app.f0ad6ee4.js" as="script"><link rel="preload" href="/blog/assets/js/3.356a845b.js" as="script"><link rel="preload" href="/blog/assets/js/1.ac301aa1.js" as="script"><link rel="preload" href="/blog/assets/js/69.99e0a41b.js" as="script"><link rel="preload" href="/blog/assets/js/12.bc2d1eb1.js" as="script"><link rel="prefetch" href="/blog/assets/js/10.87d5afe9.js"><link rel="prefetch" href="/blog/assets/js/100.ec3026a1.js"><link rel="prefetch" href="/blog/assets/js/101.6a00e311.js"><link rel="prefetch" href="/blog/assets/js/102.c4a529c1.js"><link rel="prefetch" href="/blog/assets/js/103.e7278754.js"><link rel="prefetch" href="/blog/assets/js/104.4e3b6b11.js"><link rel="prefetch" href="/blog/assets/js/105.0af58477.js"><link rel="prefetch" href="/blog/assets/js/106.2e6131c6.js"><link rel="prefetch" href="/blog/assets/js/107.f173f733.js"><link rel="prefetch" href="/blog/assets/js/108.1c047461.js"><link rel="prefetch" href="/blog/assets/js/109.4b057ece.js"><link rel="prefetch" href="/blog/assets/js/11.f0d97171.js"><link rel="prefetch" href="/blog/assets/js/110.7b97b5de.js"><link rel="prefetch" href="/blog/assets/js/111.d1ebac7a.js"><link rel="prefetch" href="/blog/assets/js/112.43153279.js"><link rel="prefetch" href="/blog/assets/js/113.ff5ef227.js"><link rel="prefetch" href="/blog/assets/js/114.7f406e54.js"><link rel="prefetch" href="/blog/assets/js/115.a88f7a28.js"><link rel="prefetch" href="/blog/assets/js/116.1ceff372.js"><link rel="prefetch" href="/blog/assets/js/117.01ded6ca.js"><link rel="prefetch" href="/blog/assets/js/118.48314712.js"><link rel="prefetch" href="/blog/assets/js/119.cf1e55e5.js"><link rel="prefetch" href="/blog/assets/js/120.e0983a9f.js"><link rel="prefetch" href="/blog/assets/js/121.dde936ad.js"><link rel="prefetch" href="/blog/assets/js/122.0cd424b4.js"><link rel="prefetch" href="/blog/assets/js/123.a34feb4e.js"><link rel="prefetch" href="/blog/assets/js/124.238c14b1.js"><link rel="prefetch" href="/blog/assets/js/125.d716c24d.js"><link rel="prefetch" href="/blog/assets/js/126.2f56f782.js"><link rel="prefetch" href="/blog/assets/js/127.9335ac5a.js"><link rel="prefetch" href="/blog/assets/js/128.49c260ac.js"><link rel="prefetch" href="/blog/assets/js/129.9c768f9f.js"><link rel="prefetch" href="/blog/assets/js/13.0307da51.js"><link rel="prefetch" href="/blog/assets/js/130.d232c17b.js"><link rel="prefetch" href="/blog/assets/js/131.96df3af8.js"><link rel="prefetch" href="/blog/assets/js/132.59e5834d.js"><link rel="prefetch" href="/blog/assets/js/133.ec52adfc.js"><link rel="prefetch" href="/blog/assets/js/134.560137ae.js"><link rel="prefetch" href="/blog/assets/js/135.d0354dd7.js"><link rel="prefetch" href="/blog/assets/js/136.0097be1b.js"><link rel="prefetch" href="/blog/assets/js/137.9a07e09d.js"><link rel="prefetch" href="/blog/assets/js/138.dd9569ad.js"><link rel="prefetch" href="/blog/assets/js/139.cee84418.js"><link rel="prefetch" href="/blog/assets/js/14.f2e9a5a9.js"><link rel="prefetch" href="/blog/assets/js/140.1f5c12aa.js"><link rel="prefetch" href="/blog/assets/js/141.4710e888.js"><link rel="prefetch" href="/blog/assets/js/142.5066b7d9.js"><link rel="prefetch" href="/blog/assets/js/143.eccb14e4.js"><link rel="prefetch" href="/blog/assets/js/144.9c5e059d.js"><link rel="prefetch" href="/blog/assets/js/145.dda71cf4.js"><link rel="prefetch" href="/blog/assets/js/146.46cf2390.js"><link rel="prefetch" href="/blog/assets/js/147.e2d69ae1.js"><link rel="prefetch" href="/blog/assets/js/148.262c94d9.js"><link rel="prefetch" href="/blog/assets/js/149.ccbe8bf7.js"><link rel="prefetch" href="/blog/assets/js/15.79acc86b.js"><link rel="prefetch" href="/blog/assets/js/150.8ca59583.js"><link rel="prefetch" href="/blog/assets/js/151.4863a1e2.js"><link rel="prefetch" href="/blog/assets/js/152.be167374.js"><link rel="prefetch" href="/blog/assets/js/153.668d9b20.js"><link rel="prefetch" href="/blog/assets/js/154.910109f9.js"><link rel="prefetch" href="/blog/assets/js/155.dd2b1083.js"><link rel="prefetch" href="/blog/assets/js/156.092c3d83.js"><link rel="prefetch" href="/blog/assets/js/157.00a3876f.js"><link rel="prefetch" href="/blog/assets/js/158.562facfa.js"><link rel="prefetch" href="/blog/assets/js/159.57130fd0.js"><link rel="prefetch" href="/blog/assets/js/16.9f30ef4b.js"><link rel="prefetch" href="/blog/assets/js/160.c5d9981d.js"><link rel="prefetch" href="/blog/assets/js/161.6dda5520.js"><link rel="prefetch" href="/blog/assets/js/162.dfc351bf.js"><link rel="prefetch" href="/blog/assets/js/163.2e1ce852.js"><link rel="prefetch" href="/blog/assets/js/164.9c04fc2f.js"><link rel="prefetch" href="/blog/assets/js/165.a4a62338.js"><link rel="prefetch" href="/blog/assets/js/166.ea4e020a.js"><link rel="prefetch" href="/blog/assets/js/167.f80d30aa.js"><link rel="prefetch" href="/blog/assets/js/168.c6e188a3.js"><link rel="prefetch" href="/blog/assets/js/169.274fb686.js"><link rel="prefetch" href="/blog/assets/js/17.6d34cb6d.js"><link rel="prefetch" href="/blog/assets/js/170.3d6eeca1.js"><link rel="prefetch" href="/blog/assets/js/171.d4a17a99.js"><link rel="prefetch" href="/blog/assets/js/172.398d6b04.js"><link rel="prefetch" href="/blog/assets/js/173.54366f99.js"><link rel="prefetch" href="/blog/assets/js/174.862aa686.js"><link rel="prefetch" href="/blog/assets/js/175.715022f4.js"><link rel="prefetch" href="/blog/assets/js/176.c6d5b01f.js"><link rel="prefetch" href="/blog/assets/js/177.6808a68b.js"><link rel="prefetch" href="/blog/assets/js/178.69959483.js"><link rel="prefetch" href="/blog/assets/js/179.a54cb1a9.js"><link rel="prefetch" href="/blog/assets/js/18.9a0a4738.js"><link rel="prefetch" href="/blog/assets/js/180.bd5a05a1.js"><link rel="prefetch" href="/blog/assets/js/181.867c6653.js"><link rel="prefetch" href="/blog/assets/js/182.0be5c9ef.js"><link rel="prefetch" href="/blog/assets/js/183.aa5cc7b0.js"><link rel="prefetch" href="/blog/assets/js/184.5fa03332.js"><link rel="prefetch" href="/blog/assets/js/185.ec5b7e4c.js"><link rel="prefetch" href="/blog/assets/js/186.a8f02974.js"><link rel="prefetch" href="/blog/assets/js/187.7cf71da6.js"><link rel="prefetch" href="/blog/assets/js/188.c6e293df.js"><link rel="prefetch" href="/blog/assets/js/189.36eb430f.js"><link rel="prefetch" href="/blog/assets/js/19.461321a8.js"><link rel="prefetch" href="/blog/assets/js/190.8340f269.js"><link rel="prefetch" href="/blog/assets/js/191.b487e09c.js"><link rel="prefetch" href="/blog/assets/js/192.f54aacfd.js"><link rel="prefetch" href="/blog/assets/js/193.b53b29e4.js"><link rel="prefetch" href="/blog/assets/js/194.a411aada.js"><link rel="prefetch" href="/blog/assets/js/195.a785bc1e.js"><link rel="prefetch" href="/blog/assets/js/196.cdfad9f3.js"><link rel="prefetch" href="/blog/assets/js/197.7a076d36.js"><link rel="prefetch" href="/blog/assets/js/198.8cf0b2f0.js"><link rel="prefetch" href="/blog/assets/js/199.314fa4be.js"><link rel="prefetch" href="/blog/assets/js/20.9ee2c2df.js"><link rel="prefetch" href="/blog/assets/js/200.9040d196.js"><link rel="prefetch" href="/blog/assets/js/201.34c737e6.js"><link rel="prefetch" href="/blog/assets/js/202.77b7f67e.js"><link rel="prefetch" href="/blog/assets/js/203.ce54ce3b.js"><link rel="prefetch" href="/blog/assets/js/204.9d5f4e88.js"><link rel="prefetch" href="/blog/assets/js/205.b6291310.js"><link rel="prefetch" href="/blog/assets/js/206.412e9628.js"><link rel="prefetch" href="/blog/assets/js/207.e1c34d8a.js"><link rel="prefetch" href="/blog/assets/js/208.9fc5c55e.js"><link rel="prefetch" href="/blog/assets/js/209.d70e3052.js"><link rel="prefetch" href="/blog/assets/js/21.ab461753.js"><link rel="prefetch" href="/blog/assets/js/210.69775b07.js"><link rel="prefetch" href="/blog/assets/js/211.318adeb2.js"><link rel="prefetch" href="/blog/assets/js/212.f3d0a58c.js"><link rel="prefetch" href="/blog/assets/js/213.51edce6b.js"><link rel="prefetch" href="/blog/assets/js/214.a40ca012.js"><link rel="prefetch" href="/blog/assets/js/215.f9a0ffc2.js"><link rel="prefetch" href="/blog/assets/js/216.bda50daa.js"><link rel="prefetch" href="/blog/assets/js/217.1c7a2274.js"><link rel="prefetch" href="/blog/assets/js/218.4b6d757a.js"><link rel="prefetch" href="/blog/assets/js/219.dbb2ecbc.js"><link rel="prefetch" href="/blog/assets/js/22.6fae3e7b.js"><link rel="prefetch" href="/blog/assets/js/220.08bc50da.js"><link rel="prefetch" href="/blog/assets/js/221.4d6c729e.js"><link rel="prefetch" href="/blog/assets/js/222.6c1583f7.js"><link rel="prefetch" href="/blog/assets/js/223.057da04f.js"><link rel="prefetch" href="/blog/assets/js/224.d8f39d1a.js"><link rel="prefetch" href="/blog/assets/js/225.e143ab83.js"><link rel="prefetch" href="/blog/assets/js/226.9f75d8b1.js"><link rel="prefetch" href="/blog/assets/js/227.61ec222e.js"><link rel="prefetch" href="/blog/assets/js/228.672a9021.js"><link rel="prefetch" href="/blog/assets/js/229.dd048393.js"><link rel="prefetch" href="/blog/assets/js/23.d1bab850.js"><link rel="prefetch" href="/blog/assets/js/230.7e37c050.js"><link rel="prefetch" href="/blog/assets/js/231.984875a1.js"><link rel="prefetch" href="/blog/assets/js/232.6076dc51.js"><link rel="prefetch" href="/blog/assets/js/233.f5f747ee.js"><link rel="prefetch" href="/blog/assets/js/234.eaf27c9d.js"><link rel="prefetch" href="/blog/assets/js/235.18b7220c.js"><link rel="prefetch" href="/blog/assets/js/236.d7c1ca14.js"><link rel="prefetch" href="/blog/assets/js/237.e88e3371.js"><link rel="prefetch" href="/blog/assets/js/238.e465816e.js"><link rel="prefetch" href="/blog/assets/js/239.d6af8cff.js"><link rel="prefetch" href="/blog/assets/js/24.686583c4.js"><link rel="prefetch" href="/blog/assets/js/25.8a534efe.js"><link rel="prefetch" href="/blog/assets/js/26.f4b77073.js"><link rel="prefetch" href="/blog/assets/js/27.95ca6188.js"><link rel="prefetch" href="/blog/assets/js/28.8292b0f8.js"><link rel="prefetch" href="/blog/assets/js/29.4b01c4be.js"><link rel="prefetch" href="/blog/assets/js/30.d48d278e.js"><link rel="prefetch" href="/blog/assets/js/31.c8690083.js"><link rel="prefetch" href="/blog/assets/js/32.646617bc.js"><link rel="prefetch" href="/blog/assets/js/33.2a8b9861.js"><link rel="prefetch" href="/blog/assets/js/34.7499cc6a.js"><link rel="prefetch" href="/blog/assets/js/35.df5a9c54.js"><link rel="prefetch" href="/blog/assets/js/36.d73be4cc.js"><link rel="prefetch" href="/blog/assets/js/37.36349165.js"><link rel="prefetch" href="/blog/assets/js/38.5695b56e.js"><link rel="prefetch" href="/blog/assets/js/39.5d986885.js"><link rel="prefetch" href="/blog/assets/js/4.337f88e2.js"><link rel="prefetch" href="/blog/assets/js/40.71b989ec.js"><link rel="prefetch" href="/blog/assets/js/41.1863a86e.js"><link rel="prefetch" href="/blog/assets/js/42.51636736.js"><link rel="prefetch" href="/blog/assets/js/43.d623d9a0.js"><link rel="prefetch" href="/blog/assets/js/44.18ab80e6.js"><link rel="prefetch" href="/blog/assets/js/45.485d589e.js"><link rel="prefetch" href="/blog/assets/js/46.549c7867.js"><link rel="prefetch" href="/blog/assets/js/47.72a9df10.js"><link rel="prefetch" href="/blog/assets/js/48.a6816061.js"><link rel="prefetch" href="/blog/assets/js/49.e981c2a8.js"><link rel="prefetch" href="/blog/assets/js/5.e5e90361.js"><link rel="prefetch" href="/blog/assets/js/50.797ebd59.js"><link rel="prefetch" href="/blog/assets/js/51.13009590.js"><link rel="prefetch" href="/blog/assets/js/52.37df36a9.js"><link rel="prefetch" href="/blog/assets/js/53.cf62307a.js"><link rel="prefetch" href="/blog/assets/js/54.6519b564.js"><link rel="prefetch" href="/blog/assets/js/55.f8ddebca.js"><link rel="prefetch" href="/blog/assets/js/56.1432c2c7.js"><link rel="prefetch" href="/blog/assets/js/57.52d2779c.js"><link rel="prefetch" href="/blog/assets/js/58.4dd49e9d.js"><link rel="prefetch" href="/blog/assets/js/59.e4b47149.js"><link rel="prefetch" href="/blog/assets/js/6.2b2620c5.js"><link rel="prefetch" href="/blog/assets/js/60.eb4b2fc8.js"><link rel="prefetch" href="/blog/assets/js/61.ab319962.js"><link rel="prefetch" href="/blog/assets/js/62.98033114.js"><link rel="prefetch" href="/blog/assets/js/63.23e501d6.js"><link rel="prefetch" href="/blog/assets/js/64.7e9d332b.js"><link rel="prefetch" href="/blog/assets/js/65.74248180.js"><link rel="prefetch" href="/blog/assets/js/66.d4b7da39.js"><link rel="prefetch" href="/blog/assets/js/67.f2ef4aff.js"><link rel="prefetch" href="/blog/assets/js/68.956ceefc.js"><link rel="prefetch" href="/blog/assets/js/7.939c3558.js"><link rel="prefetch" href="/blog/assets/js/70.f82c8763.js"><link rel="prefetch" href="/blog/assets/js/71.b0041c88.js"><link rel="prefetch" href="/blog/assets/js/72.c72bdc4c.js"><link rel="prefetch" href="/blog/assets/js/73.055606cd.js"><link rel="prefetch" href="/blog/assets/js/74.1b330a7a.js"><link rel="prefetch" href="/blog/assets/js/75.66e03f3a.js"><link rel="prefetch" href="/blog/assets/js/76.f4bf9573.js"><link rel="prefetch" href="/blog/assets/js/77.e752979a.js"><link rel="prefetch" href="/blog/assets/js/78.8c39241e.js"><link rel="prefetch" href="/blog/assets/js/79.2363fb61.js"><link rel="prefetch" href="/blog/assets/js/8.9730be9f.js"><link rel="prefetch" href="/blog/assets/js/80.7fdb54dc.js"><link rel="prefetch" href="/blog/assets/js/81.1cf1d666.js"><link rel="prefetch" href="/blog/assets/js/82.6b693400.js"><link rel="prefetch" href="/blog/assets/js/83.4637f09b.js"><link rel="prefetch" href="/blog/assets/js/84.fb6b5266.js"><link rel="prefetch" href="/blog/assets/js/85.b3ad6743.js"><link rel="prefetch" href="/blog/assets/js/86.4e58488c.js"><link rel="prefetch" href="/blog/assets/js/87.6afa6f7e.js"><link rel="prefetch" href="/blog/assets/js/88.0d69f531.js"><link rel="prefetch" href="/blog/assets/js/89.1bc27a5d.js"><link rel="prefetch" href="/blog/assets/js/9.641405a6.js"><link rel="prefetch" href="/blog/assets/js/90.27abf60d.js"><link rel="prefetch" href="/blog/assets/js/91.caad30ec.js"><link rel="prefetch" href="/blog/assets/js/92.d7d999e4.js"><link rel="prefetch" href="/blog/assets/js/93.ca5f2755.js"><link rel="prefetch" href="/blog/assets/js/94.e85bf416.js"><link rel="prefetch" href="/blog/assets/js/95.36dcf9da.js"><link rel="prefetch" href="/blog/assets/js/96.01143dbf.js"><link rel="prefetch" href="/blog/assets/js/97.3b3c9b9e.js"><link rel="prefetch" href="/blog/assets/js/98.1850b84a.js"><link rel="prefetch" href="/blog/assets/js/99.6d32f3ec.js">
+    <link rel="stylesheet" href="/blog/assets/css/0.styles.37c3a971.css">
+  </head>
+  <body>
+    <div id="app" data-server-rendered="true"><div class="theme-container" data-v-130b300a><div data-v-130b300a><div class="password-shadow password-wrapper-out" style="display:none;" data-v-25ba6db2 data-v-130b300a data-v-130b300a><h3 class="title" data-v-25ba6db2 data-v-25ba6db2>HHH的学习碎碎念</h3> <p class="description" data-v-25ba6db2 data-v-25ba6db2>一个小小前端的学习笔记!</p> <label id="box" class="inputBox" data-v-25ba6db2 data-v-25ba6db2><input type="password" value="" data-v-25ba6db2> <span data-v-25ba6db2>Konck! Knock!</span> <button data-v-25ba6db2>OK</button></label> <div class="footer" data-v-25ba6db2 data-v-25ba6db2><span data-v-25ba6db2><i class="iconfont reco-theme" data-v-25ba6db2></i> <a target="blank" href="https://vuepress-theme-reco.recoluan.com" data-v-25ba6db2>vuePress-theme-reco</a></span> <span data-v-25ba6db2><i class="iconfont reco-copyright" data-v-25ba6db2></i> <a data-v-25ba6db2><span data-v-25ba6db2>HHH</span>
+            
+          <!---->
+          2022
+        </a></span></div></div> <div class="hide" data-v-130b300a><header class="navbar" data-v-130b300a><div class="sidebar-button"><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" role="img" viewBox="0 0 448 512" class="icon"><path fill="currentColor" d="M436 124H12c-6.627 0-12-5.373-12-12V80c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12zm0 160H12c-6.627 0-12-5.373-12-12v-32c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12zm0 160H12c-6.627 0-12-5.373-12-12v-32c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12z"></path></svg></div> <a href="/blog/" class="home-link router-link-active"><img src="/blog/assets/images/head.jpg" alt="HHH的学习碎碎念" class="logo"> <span class="site-name">HHH的学习碎碎念</span></a> <div class="links"><div class="color-picker"><a class="color-button"><i class="iconfont reco-color"></i></a> <div class="color-picker-menu" style="display:none;"><div class="mode-options"><h4 class="title">Choose mode</h4> <ul class="color-mode-options"><li class="dark">dark</li><li class="auto active">auto</li><li class="light">light</li></ul></div></div></div> <div class="search-box"><i class="iconfont reco-search"></i> <input aria-label="Search" autocomplete="off" spellcheck="false" value=""> <!----></div> <nav class="nav-links can-hide"><div class="nav-item"><a href="/blog/" class="nav-link"><i class="iconfont reco-home"></i>
+  Home
+</a></div><div class="nav-item"><div class="dropdown-wrapper"><a class="dropdown-title"><span class="title"><i class="iconfont reco-category"></i>
+      分类
+    </span> <span class="arrow right"></span></a> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/blog/categories/CSS/" class="nav-link"><i class="undefined"></i>
+  CSS
+</a></li><li class="dropdown-item"><!----> <a href="/blog/categories/ES6/" class="nav-link"><i class="undefined"></i>
+  ES6
+</a></li><li class="dropdown-item"><!----> <a href="/blog/categories/HTML/" class="nav-link"><i class="undefined"></i>
+  HTML
+</a></li><li class="dropdown-item"><!----> <a href="/blog/categories/JavaScript/" class="nav-link"><i class="undefined"></i>
+  JavaScript
+</a></li><li class="dropdown-item"><!----> <a href="/blog/categories/SVG/" class="nav-link"><i class="undefined"></i>
+  SVG
+</a></li><li class="dropdown-item"><!----> <a href="/blog/categories/vuepress/" class="nav-link"><i class="undefined"></i>
+  vuepress
+</a></li><li class="dropdown-item"><!----> <a href="/blog/categories/uniapp/" class="nav-link"><i class="undefined"></i>
+  uniapp
+</a></li><li class="dropdown-item"><!----> <a href="/blog/categories/前端工具/" class="nav-link"><i class="undefined"></i>
+  前端工具
+</a></li><li class="dropdown-item"><!----> <a href="/blog/categories/构建工具/" class="nav-link"><i class="undefined"></i>
+  构建工具
+</a></li><li class="dropdown-item"><!----> <a href="/blog/categories/前端缓存/" class="nav-link"><i class="undefined"></i>
+  前端缓存
+</a></li><li class="dropdown-item"><!----> <a href="/blog/categories/前端规范/" class="nav-link"><i class="undefined"></i>
+  前端规范
+</a></li><li class="dropdown-item"><!----> <a href="/blog/categories/微信小程序/" class="nav-link"><i class="undefined"></i>
+  微信小程序
+</a></li><li class="dropdown-item"><!----> <a href="/blog/categories/性能优化/" class="nav-link"><i class="undefined"></i>
+  性能优化
+</a></li><li class="dropdown-item"><!----> <a href="/blog/categories/项目列表/" class="nav-link"><i class="undefined"></i>
+  项目列表
+</a></li></ul></div></div><div class="nav-item"><a href="/blog/tag/" class="nav-link"><i class="iconfont reco-tag"></i>
+  标签
+</a></div><div class="nav-item"><a href="https://www.cnblogs.com/jiajia-hjj/" target="_blank" rel="noopener noreferrer" class="nav-link external"><i class="iconfont reco-blog"></i>
+  博客园
+  <span><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg> <span class="sr-only">(opens new window)</span></span></a></div><div class="nav-item"><a href="https://github.com/smallsunnyfox" target="_blank" rel="noopener noreferrer" class="nav-link external"><i class="iconfont reco-github"></i>
+  GitHub
+  <span><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg> <span class="sr-only">(opens new window)</span></span></a></div> <!----></nav></div></header> <div class="sidebar-mask" data-v-130b300a></div> <aside class="sidebar" data-v-130b300a><div class="personal-info-wrapper" data-v-39576ba9 data-v-130b300a><img src="/blog/assets/images/head.jpg" alt="author-avatar" class="personal-img" data-v-39576ba9> <h3 class="name" data-v-39576ba9>
+    HHH
+  </h3> <div class="num" data-v-39576ba9><div data-v-39576ba9><h3 data-v-39576ba9>206</h3> <h6 data-v-39576ba9>Articles</h6></div> <div data-v-39576ba9><h3 data-v-39576ba9>18</h3> <h6 data-v-39576ba9>Tags</h6></div></div> <ul class="social-links" data-v-39576ba9></ul> <hr data-v-39576ba9></div> <nav class="nav-links"><div class="nav-item"><a href="/blog/" class="nav-link"><i class="iconfont reco-home"></i>
+  Home
+</a></div><div class="nav-item"><div class="dropdown-wrapper"><a class="dropdown-title"><span class="title"><i class="iconfont reco-category"></i>
+      分类
+    </span> <span class="arrow right"></span></a> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/blog/categories/CSS/" class="nav-link"><i class="undefined"></i>
+  CSS
+</a></li><li class="dropdown-item"><!----> <a href="/blog/categories/ES6/" class="nav-link"><i class="undefined"></i>
+  ES6
+</a></li><li class="dropdown-item"><!----> <a href="/blog/categories/HTML/" class="nav-link"><i class="undefined"></i>
+  HTML
+</a></li><li class="dropdown-item"><!----> <a href="/blog/categories/JavaScript/" class="nav-link"><i class="undefined"></i>
+  JavaScript
+</a></li><li class="dropdown-item"><!----> <a href="/blog/categories/SVG/" class="nav-link"><i class="undefined"></i>
+  SVG
+</a></li><li class="dropdown-item"><!----> <a href="/blog/categories/vuepress/" class="nav-link"><i class="undefined"></i>
+  vuepress
+</a></li><li class="dropdown-item"><!----> <a href="/blog/categories/uniapp/" class="nav-link"><i class="undefined"></i>
+  uniapp
+</a></li><li class="dropdown-item"><!----> <a href="/blog/categories/前端工具/" class="nav-link"><i class="undefined"></i>
+  前端工具
+</a></li><li class="dropdown-item"><!----> <a href="/blog/categories/构建工具/" class="nav-link"><i class="undefined"></i>
+  构建工具
+</a></li><li class="dropdown-item"><!----> <a href="/blog/categories/前端缓存/" class="nav-link"><i class="undefined"></i>
+  前端缓存
+</a></li><li class="dropdown-item"><!----> <a href="/blog/categories/前端规范/" class="nav-link"><i class="undefined"></i>
+  前端规范
+</a></li><li class="dropdown-item"><!----> <a href="/blog/categories/微信小程序/" class="nav-link"><i class="undefined"></i>
+  微信小程序
+</a></li><li class="dropdown-item"><!----> <a href="/blog/categories/性能优化/" class="nav-link"><i class="undefined"></i>
+  性能优化
+</a></li><li class="dropdown-item"><!----> <a href="/blog/categories/项目列表/" class="nav-link"><i class="undefined"></i>
+  项目列表
+</a></li></ul></div></div><div class="nav-item"><a href="/blog/tag/" class="nav-link"><i class="iconfont reco-tag"></i>
+  标签
+</a></div><div class="nav-item"><a href="https://www.cnblogs.com/jiajia-hjj/" target="_blank" rel="noopener noreferrer" class="nav-link external"><i class="iconfont reco-blog"></i>
+  博客园
+  <span><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg> <span class="sr-only">(opens new window)</span></span></a></div><div class="nav-item"><a href="https://github.com/smallsunnyfox" target="_blank" rel="noopener noreferrer" class="nav-link external"><i class="iconfont reco-github"></i>
+  GitHub
+  <span><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg> <span class="sr-only">(opens new window)</span></span></a></div> <!----></nav> <ul class="sidebar-links"><li><section class="sidebar-group collapsable depth-0"><p class="sidebar-heading open"><span>HTML5</span> <span class="arrow down"></span></p> <ul class="sidebar-links sidebar-group-items"><li><a href="/blog/note/HTML5/H5兼容处理.html" class="sidebar-link">H5兼容处理</a></li><li><a href="/blog/note/HTML5/H5兼容问题及解决方法.html" class="active sidebar-link">Meta基础知识：</a></li><li><a href="/blog/note/HTML5/H5和jq的类操作.html" class="sidebar-link">H5类名操作</a></li></ul></section></li></ul> </aside> <div class="password-shadow password-wrapper-in" style="display:none;" data-v-25ba6db2 data-v-130b300a><h3 class="title" data-v-25ba6db2 data-v-25ba6db2></h3> <!----> <label id="box" class="inputBox" data-v-25ba6db2 data-v-25ba6db2><input type="password" value="" data-v-25ba6db2> <span data-v-25ba6db2>Konck! Knock!</span> <button data-v-25ba6db2>OK</button></label> <div class="footer" data-v-25ba6db2 data-v-25ba6db2><span data-v-25ba6db2><i class="iconfont reco-theme" data-v-25ba6db2></i> <a target="blank" href="https://vuepress-theme-reco.recoluan.com" data-v-25ba6db2>vuePress-theme-reco</a></span> <span data-v-25ba6db2><i class="iconfont reco-copyright" data-v-25ba6db2></i> <a data-v-25ba6db2><span data-v-25ba6db2>HHH</span>
+            
+          <!---->
+          2022
+        </a></span></div></div> <div data-v-130b300a><main class="page" style="padding-right:0;"><section><div class="page-title"><h1 class="title">Meta基础知识：</h1> <div data-v-f875f3fc><i class="iconfont reco-account" data-v-f875f3fc><span data-v-f875f3fc>HHH</span></i> <!----> <!----> <!----></div></div> <div class="theme-reco-content content__default"><h4 id="meta基础知识"><a href="#meta基础知识" class="header-anchor">#</a> Meta基础知识：</h4> <ul><li><p>H5页面窗口自动调整到设备宽度，并禁止用户缩放页面</p> <p>[<img src="https://common.cnblogs.com/images/copycode.gif" alt="复制代码">](javascript:void(0)😉</p> <div class="language- line-numbers-mode"><pre class="language-text"><code>//一、HTML页面结构
+&lt;meta name=&quot;viewport&quot; content=&quot;width=device-width,initial-scale=1.0,minimum-scale=1.0,maximum-scale=1.0,user-scalable=no&quot; /&gt;
+// width    设置viewport宽度，为一个正整数，或字符串‘device-width’
+// height   设置viewport高度，一般设置了宽度，会自动解析出高度，可以不用设置
+// initial-scale    默认缩放比例，为一个数字，可以带小数
+// minimum-scale    允许用户最小缩放比例，为一个数字，可以带小数
+// maximum-scale    允许用户最大缩放比例，为一个数字，可以带小数
+// user-scalable    是否允许手动缩放
+
+//二、JS动态判断
+var phoneWidth =  parseInt(window.screen.width);
+var phoneScale = phoneWidth/640;
+var ua = navigator.userAgent;
+if (/Android (\d+\.\d+)/.test(ua)){
+    var version = parseFloat(RegExp.$1);
+    if(version&gt;2.3){
+        document.write('&lt;meta name=&quot;viewport&quot; content=&quot;width=640, minimum-scale = '+phoneScale+', maximum-scale = '+phoneScale+', target-densitydpi=device-dpi&quot;&gt;');
+    }else{
+        document.write('&lt;meta name=&quot;viewport&quot; content=&quot;width=640, target-densitydpi=device-dpi&quot;&gt;');
+    }
+} else {
+    document.write('&lt;meta name=&quot;viewport&quot; content=&quot;width=640, user-scalable=no, target-densitydpi=device-dpi&quot;&gt;');
+}
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br><span class="line-number">6</span><br><span class="line-number">7</span><br><span class="line-number">8</span><br><span class="line-number">9</span><br><span class="line-number">10</span><br><span class="line-number">11</span><br><span class="line-number">12</span><br><span class="line-number">13</span><br><span class="line-number">14</span><br><span class="line-number">15</span><br><span class="line-number">16</span><br><span class="line-number">17</span><br><span class="line-number">18</span><br><span class="line-number">19</span><br><span class="line-number">20</span><br><span class="line-number">21</span><br><span class="line-number">22</span><br><span class="line-number">23</span><br></div></div><p>[<img src="https://common.cnblogs.com/images/copycode.gif" alt="复制代码">](javascript:void(0)😉</p></li> <li><p>空白页基本meta标签</p> <p>[<img src="https://common.cnblogs.com/images/copycode.gif" alt="复制代码">](javascript:void(0)😉</p> <div class="language- line-numbers-mode"><pre class="language-text"><code>&lt;!-- 设置缩放 --&gt;
+&lt;meta name=&quot;viewport&quot; content=&quot;width=device-width, initial-scale=1, user-scalable=no, minimal-ui&quot; /&gt;
+&lt;!-- 可隐藏地址栏，仅针对IOS的Safari（注：IOS7.0版本以后，safari上已看不到效果） --&gt;
+&lt;meta name=&quot;apple-mobile-web-app-capable&quot; content=&quot;yes&quot; /&gt;
+&lt;!-- 仅针对IOS的Safari顶端状态条的样式（可选default/black/black-translucent ） --&gt;
+&lt;meta name=&quot;apple-mobile-web-app-status-bar-style&quot; content=&quot;black&quot; /&gt;
+&lt;!-- IOS中禁用将数字识别为电话号码/忽略Android平台中对邮箱地址的识别 --&gt;
+&lt;meta name=&quot;format-detection&quot;content=&quot;telephone=no, email=no&quot; /&gt;
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br><span class="line-number">6</span><br><span class="line-number">7</span><br><span class="line-number">8</span><br></div></div><p>[<img src="https://common.cnblogs.com/images/copycode.gif" alt="复制代码">](javascript:void(0)😉</p></li> <li><p>H5页面窗口自动调整到设备宽度，并禁止用户缩放页面</p> <p>[<img src="https://common.cnblogs.com/images/copycode.gif" alt="复制代码">](javascript:void(0)😉</p> <div class="language- line-numbers-mode"><pre class="language-text"><code>&lt;!-- 启用360浏览器的极速模式(webkit) --&gt;
+&lt;meta name=&quot;renderer&quot; content=&quot;webkit&quot;&gt;
+&lt;!-- 避免IE使用兼容模式 --&gt;
+&lt;meta http-equiv=&quot;X-UA-Compatible&quot; content=&quot;IE=edge&quot;&gt;
+&lt;!-- 针对手持设备优化，主要是针对一些老的不识别viewport的浏览器，比如黑莓 --&gt;
+&lt;meta name=&quot;HandheldFriendly&quot; content=&quot;true&quot;&gt;
+&lt;!-- 微软的老式浏览器 --&gt;
+&lt;meta name=&quot;MobileOptimized&quot; content=&quot;320&quot;&gt;
+&lt;!-- uc强制竖屏 --&gt;
+&lt;meta name=&quot;screen-orientation&quot; content=&quot;portrait&quot;&gt;
+&lt;!-- QQ强制竖屏 --&gt;
+&lt;meta name=&quot;x5-orientation&quot; content=&quot;portrait&quot;&gt;
+&lt;!-- UC强制全屏 --&gt;
+&lt;meta name=&quot;full-screen&quot; content=&quot;yes&quot;&gt;
+&lt;!-- QQ强制全屏 --&gt;
+&lt;meta name=&quot;x5-fullscreen&quot; content=&quot;true&quot;&gt;
+&lt;!-- UC应用模式 --&gt;
+&lt;meta name=&quot;browsermode&quot; content=&quot;application&quot;&gt;
+&lt;!-- QQ应用模式 --&gt;
+&lt;meta name=&quot;x5-page-mode&quot; content=&quot;app&quot;&gt;
+&lt;!-- windows phone 点击无高光 --&gt;
+&lt;meta name=&quot;msapplication-tap-highlight&quot; content=&quot;no&quot;&gt;
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br><span class="line-number">6</span><br><span class="line-number">7</span><br><span class="line-number">8</span><br><span class="line-number">9</span><br><span class="line-number">10</span><br><span class="line-number">11</span><br><span class="line-number">12</span><br><span class="line-number">13</span><br><span class="line-number">14</span><br><span class="line-number">15</span><br><span class="line-number">16</span><br><span class="line-number">17</span><br><span class="line-number">18</span><br><span class="line-number">19</span><br><span class="line-number">20</span><br><span class="line-number">21</span><br><span class="line-number">22</span><br></div></div><p>[<img src="https://common.cnblogs.com/images/copycode.gif" alt="复制代码">](javascript:void(0)😉</p></li></ul> <h4 id="常见问题"><a href="#常见问题" class="header-anchor">#</a> 常见问题：</h4> <ul><li><p>移动端如何定义字体font-family</p> <p>[<img src="https://common.cnblogs.com/images/copycode.gif" alt="复制代码">](javascript:void(0)😉</p> <div class="language- line-numbers-mode"><pre class="language-text"><code>@ --------------------------------------中文字体的英文名称
+@ 宋体      SimSun
+@ 黑体      SimHei
+@ 微信雅黑   Microsoft Yahei
+@ 微软正黑体 Microsoft JhengHei
+@ 新宋体    NSimSun
+@ 新细明体  MingLiU
+@ 细明体    MingLiU
+@ 标楷体    DFKai-SB
+@ 仿宋     FangSong
+@ 楷体     KaiTi
+@ 仿宋_GB2312  FangSong_GB2312
+@ 楷体_GB2312  KaiTi_GB2312  
+@
+@ 说明：中文字体多数使用宋体、雅黑，英文用Helvetica
+
+body { font-family: Microsoft Yahei,SimSun,Helvetica; } 
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br><span class="line-number">6</span><br><span class="line-number">7</span><br><span class="line-number">8</span><br><span class="line-number">9</span><br><span class="line-number">10</span><br><span class="line-number">11</span><br><span class="line-number">12</span><br><span class="line-number">13</span><br><span class="line-number">14</span><br><span class="line-number">15</span><br><span class="line-number">16</span><br><span class="line-number">17</span><br></div></div><p>[<img src="https://common.cnblogs.com/images/copycode.gif" alt="复制代码">](javascript:void(0)😉</p></li> <li><p>打电话发短信写邮件怎么实现</p> <p>[<img src="https://common.cnblogs.com/images/copycode.gif" alt="复制代码">](javascript:void(0)😉</p> <div class="language- line-numbers-mode"><pre class="language-text"><code>// 一、打电话
+&lt;a href=&quot;tel:0755-10086&quot;&gt;打电话给:0755-10086&lt;/a&gt;
+
+//  二、发短信，winphone系统无效
+&lt;a href=&quot;sms:10086&quot;&gt;发短信给: 10086&lt;/a&gt;
+
+// 三、写邮件
+//注：在添加这些功能时，第一个功能以&quot;?&quot;开头，后面的以&quot;&amp;&quot;开头
+//1.普通邮件
+&lt;a href=&quot;mailto:2692509295@qq.com&quot;&gt;点击我发邮件&lt;/a&gt;
+//2.收件地址后添加?cc=开头，可添加抄送地址（Android存在兼容问题）
+&lt;a href=&quot;mailto:2692509295@qq.com?cc=yeyu0000@ye.net&quot;&gt;点击我发邮件&lt;/a&gt;
+//3.跟着抄送地址后，写上&amp;bcc=,可添加密件抄送地址（Android存在兼容问题）
+&lt;a href=&quot;mailto:2692509295@qq.com?cc=yeyu0000@ye.net&amp;bcc=759905273@qq.com&quot;&gt;点击我发邮件&lt;/a&gt;
+//4.包含多个收件人、抄送、密件抄送人，用分号(;)隔开多个邮件人的地址
+&lt;a href=&quot;mailto:2692509295@qq.com;759905273@qq.com&quot;&gt;点击我发邮件&lt;/a&gt;
+//5.包含主题，用?subject=
+&lt;a href=&quot;mailto:2692509295@qq.com?subject=邮件主题&quot;&gt;点击我发邮件&lt;/a&gt;
+//6.包含内容，用?body=;如内容包含文本，使用%0A给文本换行 
+&lt;a href=&quot;mailto:2692509295@qq.com?body=邮件主题内容%0A腾讯诚信%0A期待您的到来&quot;&gt;点击我发邮件&lt;/a&gt;
+//7.内容包含链接，含http(s)://等的文本自动转化为链接
+&lt;a href=&quot;mailto:2692509295@qq.com?body=http://www.baidu.com&quot;&gt;点击我发邮件&lt;/a&gt;
+//8.内容包含图片（PC不支持）
+&lt;a href=&quot;mailto:2692509295@qq.com?body=&lt;img src='images/1.jpg' /&gt;&quot;&gt;点击我发邮件&lt;/a&gt;
+//9.完整示例
+&lt;a href=&quot;mailto:2692509295@qq.com;759905273@qq.com?cc=yeyu0000@yeah.net&amp;bcc=7500000@qq.com&amp;subject=[邮件主题]&amp;body=腾讯诚邀您参与%0A%0Ahttp://www.baidu.com%0A%0A&lt;img src='images/1.jpg' /&gt;&quot;&gt;点击我发邮件&lt;/a&gt;
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br><span class="line-number">6</span><br><span class="line-number">7</span><br><span class="line-number">8</span><br><span class="line-number">9</span><br><span class="line-number">10</span><br><span class="line-number">11</span><br><span class="line-number">12</span><br><span class="line-number">13</span><br><span class="line-number">14</span><br><span class="line-number">15</span><br><span class="line-number">16</span><br><span class="line-number">17</span><br><span class="line-number">18</span><br><span class="line-number">19</span><br><span class="line-number">20</span><br><span class="line-number">21</span><br><span class="line-number">22</span><br><span class="line-number">23</span><br><span class="line-number">24</span><br><span class="line-number">25</span><br><span class="line-number">26</span><br></div></div><p>[<img src="https://common.cnblogs.com/images/copycode.gif" alt="复制代码">](javascript:void(0)😉</p></li> <li><p>移动端touch事件（区分webkit和winphone）</p> <p>[<img src="https://common.cnblogs.com/images/copycode.gif" alt="复制代码">](javascript:void(0)😉</p> <div class="language- line-numbers-mode"><pre class="language-text"><code>/* 当用户手指放在移动设备在屏幕上滑动会触发的touch事件 */
+// 以下支持webkit
+touchstart——当手指触碰屏幕时候发生。不管当前有多少只手指
+touchmove——当手指在屏幕上滑动时连续触发。通常我们再滑屏页面，会调用event的preventDefault()可以阻止默认情况的发生：阻止页面滚动
+touchend——当手指离开屏幕时触发
+touchcancel——系统停止跟踪触摸时候会触发。例如在触摸过程中突然页面alert()一个提示框，此时会触发该事件，这个事件比较少用
+
+//TouchEvent说明：
+touches：屏幕上所有手指的信息
+targetTouches：手指在目标区域的手指信息
+changedTouches：最近一次触发该事件的手指信息
+touchend时，touches与targetTouches信息会被删除，changedTouches保存的最后一次的信息，最好用于计算手指信息
+
+//参数信息(changedTouches[0])
+clientX、clientY在显示区的坐标
+target：当前元素
+
+//事件响应顺序
+ontouchstart  &gt; ontouchmove  &gt; ontouchend &gt; onclick
+
+// 以下支持winphone 8
+MSPointerDown——当手指触碰屏幕时候发生。不管当前有多少只手指
+MSPointerMove——当手指在屏幕上滑动时连续触发。通常我们再滑屏页面，会调用css的html{-ms-touch-action: none;}可以阻止默认情况的发生：阻止页面滚动
+MSPointerUp——当手指离开屏幕时触发
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br><span class="line-number">6</span><br><span class="line-number">7</span><br><span class="line-number">8</span><br><span class="line-number">9</span><br><span class="line-number">10</span><br><span class="line-number">11</span><br><span class="line-number">12</span><br><span class="line-number">13</span><br><span class="line-number">14</span><br><span class="line-number">15</span><br><span class="line-number">16</span><br><span class="line-number">17</span><br><span class="line-number">18</span><br><span class="line-number">19</span><br><span class="line-number">20</span><br><span class="line-number">21</span><br><span class="line-number">22</span><br><span class="line-number">23</span><br><span class="line-number">24</span><br></div></div><p>[<img src="https://common.cnblogs.com/images/copycode.gif" alt="复制代码">](javascript:void(0)😉</p></li> <li><p>移动端click屏幕产生200-300ms的延时响应</p> <p>[<img src="https://common.cnblogs.com/images/copycode.gif" alt="复制代码">](javascript:void(0)😉</p> <div class="language- line-numbers-mode"><pre class="language-text"><code>说明：移动设备上的web网页是有300ms延迟的，玩玩会造成按钮点击延迟甚至是点击失效。
+
+以下是历史原因，来源一个公司内一个同事的分享：
+2007年苹果发布首款iphone上IOS系统搭载的safari为了将适用于PC端上大屏幕的网页能比较好的展示在手机端上，使用了双击缩放(double tap to zoom)的方案，比如你在手机上用浏览器打开一个PC上的网页，你可能在看到页面内容虽然可以撑满整个屏幕，但是字体、图片都很小看不清，此时可以快速双击屏幕上的某一部分，你就能看清该部分放大后的内容，再次双击后能回到原始状态。
+
+双击缩放是指用手指在屏幕上快速点击两次，iOS 自带的 Safari 浏览器会将网页缩放至原始比例。
+
+原因就出在浏览器需要如何判断快速点击上，当用户在屏幕上单击某一个元素时候，例如跳转链接&lt;a href=&quot;#&quot;&gt;&lt;/a&gt;，此处浏览器会先捕获该次单击，但浏览器不能决定用户是单纯要点击链接还是要双击该部分区域进行缩放操作，所以，捕获第一次单击后，浏览器会先Hold一段时间t，如果在t时间区间里用户未进行下一次点击，则浏览器会做单击跳转链接的处理，如果t时间里用户进行了第二次单击操作，则浏览器会禁止跳转，转而进行对该部分区域页面的缩放操作。那么这个时间区间t有多少呢？在IOS safari下，大概为300毫秒。这就是延迟的由来。造成的后果用户纯粹单击页面，页面需要过一段时间才响应，给用户慢体验感觉，对于web开发者来说是，页面js捕获click事件的回调函数处理，需要300ms后才生效，也就间接导致影响其他业务逻辑的处理。
+
+//解决方案：
+fastclick可以解决在手机上点击事件的300ms延迟
+zepto的touch模块，tap事件也是为了解决在click的延迟问题
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br><span class="line-number">6</span><br><span class="line-number">7</span><br><span class="line-number">8</span><br><span class="line-number">9</span><br><span class="line-number">10</span><br><span class="line-number">11</span><br><span class="line-number">12</span><br></div></div><p>[<img src="https://common.cnblogs.com/images/copycode.gif" alt="复制代码">](javascript:void(0)😉</p></li> <li><p>Rentina显示屏原理及设计方案</p> <p>[<img src="https://common.cnblogs.com/images/copycode.gif" alt="复制代码">](javascript:void(0)😉</p> <div class="language- line-numbers-mode"><pre class="language-text"><code>说明：retina屏是一种具备超高像素密度的液晶屏，同样大小的屏幕上显示的像素点由1个变为多个，如在同样带下的屏幕上，苹果设备的retina显示屏中，像素点1个变为4个。
+在高清显示屏中的位图被放大，图片会变得模糊，因此移动端的视觉稿通常会设计为传统PC的2倍。
+那么，前端的应对方案是：设计稿切出来的图片长宽保证为偶数，并使用backgroud-size把图片缩小为原来的1/2
+
+//例如图片宽高为：200px*200px，那么写法如下
+.css{width:100px;height:100px;background-size:100px 100px;}
+//其它元素的取值为原来的1/2，例如视觉稿40px的字体，使用样式的写法为20px
+.css{font-size:20px}
+
+//image-set设计Rentina背景图
+image-set,webkit私有属性，也是CSS4的属性，为解决Rentina屏幕下的图像而生。
+.css {
+    background: url(images/bg.jpg) no-repeat center;
+    background: -webkit-image-set(
+    url(images/bg.jpg) 1x,     //支持image-set普通屏
+    url(images/bg-2x.jpg) 2x); //支持image-set的Rentinan
+}
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br><span class="line-number">6</span><br><span class="line-number">7</span><br><span class="line-number">8</span><br><span class="line-number">9</span><br><span class="line-number">10</span><br><span class="line-number">11</span><br><span class="line-number">12</span><br><span class="line-number">13</span><br><span class="line-number">14</span><br><span class="line-number">15</span><br><span class="line-number">16</span><br><span class="line-number">17</span><br></div></div><p>[<img src="https://common.cnblogs.com/images/copycode.gif" alt="复制代码">](javascript:void(0)😉</p></li> <li><p>点击元素产生背景或边框怎么去掉</p> <p>[<img src="https://common.cnblogs.com/images/copycode.gif" alt="复制代码">](javascript:void(0)😉</p> <div class="language- line-numbers-mode"><pre class="language-text"><code>/ios用户点击一个链接，会出现一个半透明灰色遮罩, 如果想要禁用，可设置-webkit-tap-highlight-color的alpha值为0去除灰色半透明遮罩；
+//android用户点击一个链接，会出现一个边框或者半透明灰色遮罩, 不同生产商定义出来额效果不一样，可设置-webkit-tap-highlight-color的alpha值为0去除部分机器自带的效果；
+//winphone系统,点击标签产生的灰色半透明背景，能通过设置&lt;meta name=&quot;msapplication-tap-highlight&quot; content=&quot;no&quot;&gt;去掉；
+//特殊说明：有些机型去除不了，如小米2。对于按钮类还有个办法，不使用a或者input标签，直接用div标签
+a,button,input,textarea { 
+    -webkit-tap-highlight-color: rgba(0,0,0,0); 
+    -webkit-user-modify:read-write-plaintext-only; //-webkit-user-modify有个副作用，就是输入法不再能够输入多个字符
+}   
+// 也可以 
+* { -webkit-tap-highlight-color: rgba(0,0,0,0); }
+//winphone下
+&lt;meta name=&quot;msapplication-tap-highlight&quot; content=&quot;no&quot;&gt;
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br><span class="line-number">6</span><br><span class="line-number">7</span><br><span class="line-number">8</span><br><span class="line-number">9</span><br><span class="line-number">10</span><br><span class="line-number">11</span><br><span class="line-number">12</span><br></div></div><p>[<img src="https://common.cnblogs.com/images/copycode.gif" alt="复制代码">](javascript:void(0)😉</p></li> <li><p>美化表单元素</p> <p>[<img src="https://common.cnblogs.com/images/copycode.gif" alt="复制代码">](javascript:void(0)😉</p> <div class="language- line-numbers-mode"><pre class="language-text"><code>//一、使用appearance改变webkit浏览器的默认外观
+input,select { -webkit-appearance:none; appearance: none; }
+
+//二、winphone下，使用伪元素改变表单元素默认外观
+//1.禁用select默认箭头，::-ms-expand修改表单控件下拉箭头，设置隐藏并使用背景图片来修饰
+select::-ms-expand { display:none; }
+
+//2.禁用radio和checkbox默认样式，::-ms-check修改表单复选框或单选框默认图标，设置隐藏并使用背景图片来修饰
+input[type=radio]::-ms-check,
+input[type=checkbox]::-ms-check { display:none; }
+
+//3.禁用pc端表单输入框默认清除按钮，::-ms-clear修改清除按钮，设置隐藏并使用背景图片来修饰
+input[type=text]::-ms-clear,
+input[type=tel]::-ms-clear,
+input[type=number]::-ms-clear { display:none; }
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br><span class="line-number">6</span><br><span class="line-number">7</span><br><span class="line-number">8</span><br><span class="line-number">9</span><br><span class="line-number">10</span><br><span class="line-number">11</span><br><span class="line-number">12</span><br><span class="line-number">13</span><br><span class="line-number">14</span><br><span class="line-number">15</span><br></div></div><p>[<img src="https://common.cnblogs.com/images/copycode.gif" alt="复制代码">](javascript:void(0)😉</p></li> <li><p>移动端字体单位font-size选择px还是rem</p> <div class="language- line-numbers-mode"><pre class="language-text"><code>// 如需适配多种移动设备，建议使用rem。以下为参考值：
+html { font-size: 62.5%; }   //10*16 = 62.5%
+//设置12px字体   这里注意在rem前要加上对应的px值，解决不支持rem的浏览器的兼容问题，做到优雅降级
+body { font-size:12px; font-size:1.2rem; }
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br></div></div></li> <li><p>H5页面rem兼容适配</p> <p>[<img src="https://common.cnblogs.com/images/copycode.gif" alt="复制代码">](javascript:void(0)😉</p> <div class="language- line-numbers-mode"><pre class="language-text"><code>$(document).ready(function(){
+    //rem兼容
+    var winW = $(window).width();
+    var constant = winW/6.4;(10.8/7.5)
+    $(&quot;html,body&quot;).css(&quot;font-size&quot;,constant);
+    $(window).resize(function(){
+        var winW = $(window).width();
+        var constant = winW/10.8;
+        $(&quot;html,body&quot;).css(&quot;font-size&quot;,constant);
+    })
+})
+
+//使用时有可能造成div等容器过大。
+//div中放入img时，让div的宽高自适应，此时会造成容器的宽高可能会大于img的宽高.
+//解决：容器添加  font-size:0 ,然后div中的内容使用rem
+div {
+    font-size:0;
+}
+div img {
+    width:1rem;
+}
+div p {
+    font-size:0.5rem;
+}
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br><span class="line-number">6</span><br><span class="line-number">7</span><br><span class="line-number">8</span><br><span class="line-number">9</span><br><span class="line-number">10</span><br><span class="line-number">11</span><br><span class="line-number">12</span><br><span class="line-number">13</span><br><span class="line-number">14</span><br><span class="line-number">15</span><br><span class="line-number">16</span><br><span class="line-number">17</span><br><span class="line-number">18</span><br><span class="line-number">19</span><br><span class="line-number">20</span><br><span class="line-number">21</span><br><span class="line-number">22</span><br><span class="line-number">23</span><br><span class="line-number">24</span><br></div></div><p>[<img src="https://common.cnblogs.com/images/copycode.gif" alt="复制代码">](javascript:void(0)😉</p></li> <li><p>华为样式调整</p> <p>[<img src="https://common.cnblogs.com/images/copycode.gif" alt="复制代码">](javascript:void(0)😉</p> <div class="language- line-numbers-mode"><pre class="language-text"><code>//因为不同屏幕的宽高比尺寸的不同，所以上述的rem适配并不能非常好的适配所有手机。在chrome的调试器中会发现华为手机的比例差距稍大（425 * 620），所以针对华为手机的页面时需要调整CSS样式
+//给予样式
+function loadStyle (url) {
+    var link = document.createElement(&quot;link&quot;);
+    link.type = &quot;text/css&quot;;
+    link.rel = &quot;stylesheet&quot;;
+    link.href = url;
+    var head = document.getElementsByTagName(&quot;head&quot;)[0];
+    head.appendChild(link);
+}
+var w = $(window).width(),
+    h=$(window).height();
+var ratio = h/w;
+if (ratio &lt; 1.5){
+    loadStyle(&quot;css/huawei.css&quot;);   //针对华为手机进行样式调整
+}else if(ratio &gt; 1.8){
+    loadStyle(&quot;css/index.css&quot;);    //正常引用的样式
+}
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br><span class="line-number">6</span><br><span class="line-number">7</span><br><span class="line-number">8</span><br><span class="line-number">9</span><br><span class="line-number">10</span><br><span class="line-number">11</span><br><span class="line-number">12</span><br><span class="line-number">13</span><br><span class="line-number">14</span><br><span class="line-number">15</span><br><span class="line-number">16</span><br><span class="line-number">17</span><br><span class="line-number">18</span><br></div></div><p>[<img src="https://common.cnblogs.com/images/copycode.gif" alt="复制代码">](javascript:void(0)😉</p></li> <li><p>好用的CSS样式</p> <p>[<img src="https://common.cnblogs.com/images/copycode.gif" alt="复制代码">](javascript:void(0)😉</p> <div class="language- line-numbers-mode"><pre class="language-text"><code>//去掉webkit的滚动条——display: none;
+//其他参数
+::-webkit-scrollba //滚动条整体部分
+::-webkit-scrollbar-thumb   //滚动条内的小方块
+::-webkit-scrollbar-track   //滚动条轨道
+::-webkit-scrollbar-button  //滚动条轨道两端按钮
+::-webkit-scrollbar-track-piece  //滚动条中间部分，内置轨道
+::-webkit-scrollbar-corner       //边角，两个滚动条交汇处
+::-webkit-resizer            //两个滚动条的交汇处上用于通过拖动调整元素大小的小控件/* 整个滚动条 */
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br><span class="line-number">6</span><br><span class="line-number">7</span><br><span class="line-number">8</span><br><span class="line-number">9</span><br></div></div><div class="language- line-numbers-mode"><pre class="language-text"><code>::-webkit-scrollbar { 
+    width:20px; 
+    height:20px; 
+    background-color:#F5F5F5; 
+}
+/* 滚动条上的按钮 (上下箭头). */
+::-webkit-scrollbar-button {
+    background-color: #2196F3;
+    border-radius: 50px;
+    height: 20px;
+    width: 20px;
+}
+/* 滚动条上的滚动滑块. */
+::-webkit-scrollbar-thumb { 
+    background-color:#E91E63; 
+    border-radius: 50px;
+}
+/*  滚动条轨道. */
+::-webkit-scrollbar-track { 
+    -webkit-box-shadow:inset 0 0 6px rgba(0, 142, 255, 1); 
+    box-shadow:inset 0 0 6px rgba(0, 142, 255, 1, 1); 
+    background-color:#F5F5F5; 
+}
+/* 滚动条没有滑块的轨道部分 */
+::-webkit-scrollbar-track-piece {
+    background-color: rgba(255, 255, 0, 0.43);
+}
+/* 当同时有垂直滚动条和水平滚动条时交汇的部分. */
+::-webkit-scrollbar-corner {
+    background:transparent;
+}
+/* 某些元素的corner部分的部分样式(例:textarea的可拖动按钮). */
+::-webkit-resizer {
+    
+}// 禁止长按链接与图片弹出菜单a,img { -webkit-touch-callout: none } // 禁止ios和android用户选中文字 
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br><span class="line-number">6</span><br><span class="line-number">7</span><br><span class="line-number">8</span><br><span class="line-number">9</span><br><span class="line-number">10</span><br><span class="line-number">11</span><br><span class="line-number">12</span><br><span class="line-number">13</span><br><span class="line-number">14</span><br><span class="line-number">15</span><br><span class="line-number">16</span><br><span class="line-number">17</span><br><span class="line-number">18</span><br><span class="line-number">19</span><br><span class="line-number">20</span><br><span class="line-number">21</span><br><span class="line-number">22</span><br><span class="line-number">23</span><br><span class="line-number">24</span><br><span class="line-number">25</span><br><span class="line-number">26</span><br><span class="line-number">27</span><br><span class="line-number">28</span><br><span class="line-number">29</span><br><span class="line-number">30</span><br><span class="line-number">31</span><br><span class="line-number">32</span><br><span class="line-number">33</span><br><span class="line-number">34</span><br><span class="line-number">35</span><br></div></div><div class="language- line-numbers-mode"><pre class="language-text"><code>html,body {-webkit-user-select:none; user-select: none; } 
+// 改变输入框placeholder的颜色值 
+::-webkit-input-placeholder { /* WebKit browsers */ color: #999; } 
+:-moz-placeholder { /* Mozilla Firefox 4 to 18 */ color: #999; } 
+::-moz-placeholder { /* Mozilla Firefox 19+ */ color: #999; } 
+:-ms-input-placeholder { /* Internet Explorer 10+ */ color: #999; } 
+input:focus::-webkit-input-placeholder{ color:#999; } 
+// android上去掉语音输入按钮 
+input::-webkit-input-speech-button {display: none} 
+// 阻止windows Phone的默认触摸事件 
+/*说明：winphone下默认触摸事件事件使用e.preventDefault是无效的，可通过样式来禁用，如：*/ 
+html { -ms-touch-action:none; } //禁止winphone默认触摸事件
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br><span class="line-number">6</span><br><span class="line-number">7</span><br><span class="line-number">8</span><br><span class="line-number">9</span><br><span class="line-number">10</span><br><span class="line-number">11</span><br><span class="line-number">12</span><br></div></div><p>[<img src="https://common.cnblogs.com/images/copycode.gif" alt="复制代码">](javascript:void(0)😉</p></li> <li><p>取消input在ios下，输入的时候英文首字母的默认大写</p> <div class="language- line-numbers-mode"><pre class="language-text"><code>&lt;input autocapitalize=&quot;off&quot; autocorrect=&quot;off&quot; /&gt;
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br></div></div></li> <li><p>手机拍照和上传图片</p> <div class="language- line-numbers-mode"><pre class="language-text"><code>//IOS有拍照、录像、选取本地图片功能，部分Android只有选择本地图片功能。Winphone不支持
+&lt;input type=&quot;file&quot; accept=&quot;images/*&quot; /&gt;
+&lt;input type=&quot;file&quot; accept=&quot;video/*&quot; /&gt;
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br></div></div></li> <li><p>屏幕旋转的事件和样式</p> <p>[<img src="https://common.cnblogs.com/images/copycode.gif" alt="复制代码">](javascript:void(0)😉</p> <div class="language- line-numbers-mode"><pre class="language-text"><code>//JS处理
+function orientInit(){
+    var orientChk = document.documentElement.clientWidth &gt; document.documentElement.clientHeight?'landscape':'portrait';
+    if(orientChk =='lapdscape'){
+        //这里是横屏下需要执行的事件
+    }else{
+        //这里是竖屏下需要执行的事件
+    }
+}
+
+orientInit();
+window.addEventListener('onorientationchange' in window?'orientationchange':'resize', function(){
+    setTimeout(orientInit, 100);
+},false)    
+
+//CSS处理
+//竖屏时样式
+@media all and (orientation:portrait){   }
+//横屏时样式
+@media all and (orientation:landscape){   }
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br><span class="line-number">6</span><br><span class="line-number">7</span><br><span class="line-number">8</span><br><span class="line-number">9</span><br><span class="line-number">10</span><br><span class="line-number">11</span><br><span class="line-number">12</span><br><span class="line-number">13</span><br><span class="line-number">14</span><br><span class="line-number">15</span><br><span class="line-number">16</span><br><span class="line-number">17</span><br><span class="line-number">18</span><br><span class="line-number">19</span><br><span class="line-number">20</span><br></div></div><p>[<img src="https://common.cnblogs.com/images/copycode.gif" alt="复制代码">](javascript:void(0)😉</p></li> <li><p>audio元素和video元素在ios和andriod中无法自动播放</p> <p>[<img src="https://common.cnblogs.com/images/copycode.gif" alt="复制代码">](javascript:void(0)😉</p> <div class="language- line-numbers-mode"><pre class="language-text"><code>//音频，写法一
+&lt;audio src=&quot;music/bg.mp3&quot; autoplay loop controls&gt;你的浏览器还不支持哦&lt;/audio&gt;
+
+//音频，写法二
+&lt;audio controls=&quot;controls&quot;&gt; 
+    &lt;source src=&quot;music/bg.ogg&quot; type=&quot;audio/ogg&quot;&gt;&lt;/source&gt;
+    &lt;source src=&quot;music/bg.mp3&quot; type=&quot;audio/mpeg&quot;&gt;&lt;/source&gt;
+    优先播放音乐bg.ogg，不支持在播放bg.mp3
+&lt;/audio&gt;
+
+//JS绑定自动播放（操作window时，播放音乐）
+$(window).one('touchstart', function(){
+    music.play();
+})
+
+//微信下兼容处理
+document.addEventListener(&quot;WeixinJSBridgeReady&quot;, function () {
+    music.play();
+}, false);
+
+//小结
+//1.audio元素的autoplay属性在IOS及Android上无法使用，在PC端正常
+//2.audio元素没有设置controls时，在IOS及Android会占据空间大小，而在PC端Chrome是不会占据任何空间
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br><span class="line-number">6</span><br><span class="line-number">7</span><br><span class="line-number">8</span><br><span class="line-number">9</span><br><span class="line-number">10</span><br><span class="line-number">11</span><br><span class="line-number">12</span><br><span class="line-number">13</span><br><span class="line-number">14</span><br><span class="line-number">15</span><br><span class="line-number">16</span><br><span class="line-number">17</span><br><span class="line-number">18</span><br><span class="line-number">19</span><br><span class="line-number">20</span><br><span class="line-number">21</span><br><span class="line-number">22</span><br><span class="line-number">23</span><br></div></div><p>[<img src="https://common.cnblogs.com/images/copycode.gif" alt="复制代码">](javascript:void(0)😉</p></li> <li><p>重力感应事件</p> <p>[<img src="https://common.cnblogs.com/images/copycode.gif" alt="复制代码">](javascript:void(0)😉</p> <div class="language- line-numbers-mode"><pre class="language-text"><code>// 运用HTML5的deviceMotion，调用重力感应事件
+if(window.DeviceMotionEvent){
+    document.addEventListener('devicemotion', deviceMotionHandler, false)
+}   
+
+var speed = 30;
+var x = y = z = lastX = lastY = lastZ = 0;
+function deviceMotionHandler(eventData){
+    var acceleration = event.accelerationIncludingGravity;
+    x = acceleration.x;
+    y = acceleration.y; 
+    z = acceleration.z;
+    if(Math.abs(x-lastX)&gt;speed || Math.abs(y-lastY)&gt;speed || Math.abs(z-lastZ)&gt;speed ){
+        //这里是摇动后要执行的方法 
+        yaoAfter();
+    }
+    lastX = x;
+    lastY = y;
+    lastZ = z;
+}
+
+function yaoAfter(){
+    //do something
+}
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br><span class="line-number">6</span><br><span class="line-number">7</span><br><span class="line-number">8</span><br><span class="line-number">9</span><br><span class="line-number">10</span><br><span class="line-number">11</span><br><span class="line-number">12</span><br><span class="line-number">13</span><br><span class="line-number">14</span><br><span class="line-number">15</span><br><span class="line-number">16</span><br><span class="line-number">17</span><br><span class="line-number">18</span><br><span class="line-number">19</span><br><span class="line-number">20</span><br><span class="line-number">21</span><br><span class="line-number">22</span><br><span class="line-number">23</span><br><span class="line-number">24</span><br></div></div><p>[<img src="https://common.cnblogs.com/images/copycode.gif" alt="复制代码">](javascript:void(0)😉</p></li> <li><p>微信浏览器用户调整字体大小后页面矬了，怎么阻止用户调整</p> <p>[<img src="https://common.cnblogs.com/images/copycode.gif" alt="复制代码">](javascript:void(0)😉</p> <div class="language- line-numbers-mode"><pre class="language-text"><code>//以下代码可使Android机页面不再受用户字体缩放强制改变大小，但是会有1S左右延时，期间可以考虑loading来处理
+if (typeof(WeixinJSBridge) == &quot;undefined&quot;) {
+    document.addEventListener(&quot;WeixinJSBridgeReady&quot;, function (e) {
+        setTimeout(function(){
+            WeixinJSBridge.invoke('setFontSizeCallback', { 'fontSize':0}, function(res){
+                alert(JSON.stringify(res));
+            })
+        }, 0)
+    });
+}else{  
+    setTimeout(function(){
+        WeixinJSBridge.invoke('setFontSizeCallback', { 'fontSize':0}, function(res){
+            alert(JSON.stringify(res));
+        })
+    }, 0)   
+}
+
+//IOS下可使用 -webkit-text-size-adjust禁止用户调整字体大小
+body { -webkit-text-size-adjust:100%!important; }
+
+//最好的解决方案：最好使用rem或百分比布局
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br><span class="line-number">6</span><br><span class="line-number">7</span><br><span class="line-number">8</span><br><span class="line-number">9</span><br><span class="line-number">10</span><br><span class="line-number">11</span><br><span class="line-number">12</span><br><span class="line-number">13</span><br><span class="line-number">14</span><br><span class="line-number">15</span><br><span class="line-number">16</span><br><span class="line-number">17</span><br><span class="line-number">18</span><br><span class="line-number">19</span><br><span class="line-number">20</span><br><span class="line-number">21</span><br></div></div><p>[<img src="https://common.cnblogs.com/images/copycode.gif" alt="复制代码">](javascript:void(0)😉</p></li> <li><p>定位的坑</p> <p>[<img src="https://common.cnblogs.com/images/copycode.gif" alt="复制代码">](javascript:void(0)😉</p> <div class="language- line-numbers-mode"><pre class="language-text"><code>//fixed定位
+//1.ios下fixed元素容易定位出错，软键盘弹出时，影响fixed元素定位
+//2.android下fixed表现要比iOS更好，软键盘弹出时，不会影响fixed元素定位
+//3.ios4下不支持position:fixed
+//解决方案：使用[Iscroll](http://cubiq.org/iscroll-5)，如：
+&lt;div id=&quot;wrapper&quot;&gt;
+        &lt;ul&gt;
+               &lt;li&gt;&lt;/li&gt;
+               .....
+        &lt;/ul&gt;
+&lt;/div&gt;
+&lt;script src=&quot;iscroll.js&quot;&gt;&lt;/script&gt;
+&lt;script&gt;
+    var myscroll;
+    function loaded(){
+        myscroll=new iScroll(&quot;wrapper&quot;);
+    }
+    window.addEventListener(&quot;DOMContentLoaded&quot;,loaded,false);
+&lt;/script&gt;
+
+
+//position定位
+//Android下弹出软键盘弹出时，影响absolute元素定位
+//解决方案:
+var ua = navigator.userAgent.indexOf('Android');
+if(ua&gt;-1){
+    $('.ipt').on('focus', function(){
+        $('.css').css({'visibility':'hidden'})
+    }).on('blur', function(){
+        $('.css').css({'visibility':'visible'})
+    })
+}
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br><span class="line-number">6</span><br><span class="line-number">7</span><br><span class="line-number">8</span><br><span class="line-number">9</span><br><span class="line-number">10</span><br><span class="line-number">11</span><br><span class="line-number">12</span><br><span class="line-number">13</span><br><span class="line-number">14</span><br><span class="line-number">15</span><br><span class="line-number">16</span><br><span class="line-number">17</span><br><span class="line-number">18</span><br><span class="line-number">19</span><br><span class="line-number">20</span><br><span class="line-number">21</span><br><span class="line-number">22</span><br><span class="line-number">23</span><br><span class="line-number">24</span><br><span class="line-number">25</span><br><span class="line-number">26</span><br><span class="line-number">27</span><br><span class="line-number">28</span><br><span class="line-number">29</span><br><span class="line-number">30</span><br><span class="line-number">31</span><br><span class="line-number">32</span><br></div></div><p>[<img src="https://common.cnblogs.com/images/copycode.gif" alt="复制代码">](javascript:void(0)😉</p></li> <li><p>播放视频不全屏</p> <p>[<img src="https://common.cnblogs.com/images/copycode.gif" alt="复制代码">](javascript:void(0)😉</p> <div class="language- line-numbers-mode"><pre class="language-text"><code>&lt;!--
+1.ios7+支持自动播放
+2.支持Airplay的设备（如：音箱、Apple TV)播放
+x-webkit-airplay=&quot;true&quot; 
+3.播放视频不全屏
+webkit-playsinline=&quot;true&quot; 
+--&gt;
+&lt;video x-webkit-airplay=&quot;true&quot; webkit-playsinline=&quot;true&quot; preload=&quot;auto&quot; autoplay src=&quot;http://&quot;&gt;&lt;/video&gt;
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br><span class="line-number">6</span><br><span class="line-number">7</span><br><span class="line-number">8</span><br></div></div><p>[<img src="https://common.cnblogs.com/images/copycode.gif" alt="复制代码">](javascript:void(0)😉</p></li> <li><p>android 2.3 bug</p> <div class="language- line-numbers-mode"><pre class="language-text"><code>//1.@-webkit-keyframes 需要以0%开始100%结束，0%的百分号不能去掉
+//2.after和before伪类无法使用动画animation
+//3.border-radius不支持%单位，如要兼容，可以给radius设置一下较大的值
+//4.translate百分比的写法和scale在一起会导致失效，例如：
+-webkit-transform: translate(-50%,-50%) scale(-0.5, 1)
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br></div></div></li> <li><p>android 4.x bug</p> <div class="language- line-numbers-mode"><pre class="language-text"><code>//1.三星 Galaxy S4中自带浏览器不支持border-radius缩写
+//2.同时设置border-radius和背景色的时候，背景色会溢出到圆角以外部分
+//3.部分手机(如三星)，a链接支持鼠标:visited事件，也就是说链接访问后文字变为紫色
+//4.android无法同时播放多音频audio
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br></div></div></li> <li><p>消除transition闪屏</p> <div class="language- line-numbers-mode"><pre class="language-text"><code>.css {
+    -webkit-transform-style: preserve-3d;
+    -webkit-backface-visibility: hidden;
+    -webkit-perspective: 1000;
+}
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br></div></div></li> <li><p>开启硬件加速</p> <p>[<img src="https://common.cnblogs.com/images/copycode.gif" alt="复制代码">](javascript:void(0)😉</p> <div class="language- line-numbers-mode"><pre class="language-text"><code>//目前，像Chrome/Filefox/Safari/IE9+以及最新版本Opera都支持硬件加速，当检测到某个DOM元素应用了某些CSS规则时就会自动开启，从而解决页面闪白，保证动画流畅。
+.css {
+    -webkit-transform: translate3d(0,0,0);
+    -moz-transform: translate3d(0,0,0);
+    -ms-transform: translate3d(0,0,0);
+    transform: translate3d(0,0,0);
+}
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br><span class="line-number">6</span><br><span class="line-number">7</span><br></div></div><p>[<img src="https://common.cnblogs.com/images/copycode.gif" alt="复制代码">](javascript:void(0)😉</p></li> <li><p>渲染优化</p> <p>[<img src="https://common.cnblogs.com/images/copycode.gif" alt="复制代码">](javascript:void(0)😉</p> <div class="language- line-numbers-mode"><pre class="language-text"><code>//1.禁止使用iframe（阻塞父文档onload事件）
+//2.禁止使用gif图片实现loading效果（降低CPU消耗，提升渲染性能）
+//使用CSS3代码代替JS动画；
+//开启GPU加速；
+//使用base64位编码图片(不小图而言，大图不建议使用)
+    // 对于一些小图标，可以使用base64位编码，以减少网络请求。但不建议大图使用，比较耗费CPU。小图标优势在于：
+    //1.减少HTTP请求；
+    //2.避免文件跨域；
+    //3.修改及时生效
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br><span class="line-number">6</span><br><span class="line-number">7</span><br><span class="line-number">8</span><br><span class="line-number">9</span><br></div></div></li></ul></div></section> <footer class="page-edit"><!----> <div class="last-updated"><span class="prefix">更新时间: </span> <span class="time">2022-05-17 10:28:36</span></div></footer> <div class="page-nav"><p class="inner"><span class="prev"><a href="/blog/note/HTML5/H5兼容处理.html" class="prev">
+            H5兼容处理
+          </a></span> <span class="next"><a href="/blog/note/HTML5/H5和jq的类操作.html">
+            H5类名操作
+          </a></span></p></div> <div class="comments-wrapper"><!----></div> <ul class="side-bar sub-sidebar-wrapper" style="width:0;" data-v-cb1513f6></ul></main> <!----></div></div></div></div><div class="global-ui"><div class="back-to-ceiling" style="right:1rem;bottom:6rem;width:2.5rem;height:2.5rem;border-radius:.25rem;line-height:2.5rem;display:none;" data-v-c6073ba8 data-v-c6073ba8><svg t="1574745035067" viewBox="0 0 1024 1024" version="1.1" xmlns="http://www.w3.org/2000/svg" p-id="5404" class="icon" data-v-c6073ba8><path d="M526.60727968 10.90185116a27.675 27.675 0 0 0-29.21455937 0c-131.36607665 82.28402758-218.69155461 228.01873535-218.69155402 394.07834331a462.20625001 462.20625001 0 0 0 5.36959153 69.94390903c1.00431239 6.55289093-0.34802892 13.13561351-3.76865779 18.80351572-32.63518765 54.11355614-51.75690182 118.55860487-51.7569018 187.94566865a371.06718723 371.06718723 0 0 0 11.50484808 91.98906777c6.53300375 25.50556257 41.68394495 28.14064038 52.69160883 4.22606766 17.37162448-37.73630017 42.14135425-72.50938081 72.80769204-103.21549295 2.18761121 3.04276886 4.15646224 6.24463696 6.40373557 9.22774369a1871.4375 1871.4375 0 0 0 140.04691725 5.34970492 1866.36093723 1866.36093723 0 0 0 140.04691723-5.34970492c2.24727335-2.98310674 4.21612437-6.18497483 6.3937923-9.2178004 30.66633723 30.70611158 55.4360664 65.4791928 72.80769147 103.21549355 11.00766384 23.91457269 46.15860503 21.27949489 52.69160879-4.22606768a371.15156223 371.15156223 0 0 0 11.514792-91.99901164c0-69.36717486-19.13165746-133.82216804-51.75690182-187.92578088-3.42062944-5.66790279-4.76302748-12.26056868-3.76865837-18.80351632a462.20625001 462.20625001 0 0 0 5.36959269-69.943909c-0.00994388-166.08943902-87.32547796-311.81420293-218.6915546-394.09823051zM605.93803103 357.87693858a93.93749974 93.93749974 0 1 1-187.89594924 6.1e-7 93.93749974 93.93749974 0 0 1 187.89594924-6.1e-7z" p-id="5405" data-v-c6073ba8></path><path d="M429.50777625 765.63860547C429.50777625 803.39355007 466.44236686 1000.39046097 512.00932183 1000.39046097c45.56695499 0 82.4922232-197.00623328 82.5015456-234.7518555 0-37.75494459-36.9345906-68.35043303-82.4922232-68.34111062-45.57627738-0.00932239-82.52019037 30.59548842-82.51086798 68.34111062z" p-id="5406" data-v-c6073ba8></path></svg></div><!----></div></div>
+    <script src="/blog/assets/js/app.f0ad6ee4.js" defer></script><script src="/blog/assets/js/3.356a845b.js" defer></script><script src="/blog/assets/js/1.ac301aa1.js" defer></script><script src="/blog/assets/js/69.99e0a41b.js" defer></script><script src="/blog/assets/js/12.bc2d1eb1.js" defer></script>
+  </body>
+</html>
